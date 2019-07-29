@@ -4,10 +4,11 @@ shopee_chat_login1()    #登入操作
 
 #验证文本是否符合预期
 def welcom(self):
-  t = driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/section/div/div/span')
-  self.assertEqual(t.text,'欢迎登录shopee运营管理系统')
+  #t = driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/section/div/div/span')
+  #self.assertEqual(t.text,'欢迎登录shopee运营管理系统')
+  assert self.driver.find_element(By.CSS_SELECTOR, ".dashboard-text > span").text == "欢迎登录shopee运营管理系统"
   #print('登录成功后首页会显示:'.format(t.text))
-  print('登录成功后首页会显示:',t.text)
+  #print('登录成功后首页会显示:',t.text)
 '''
 断言
 t = self.driver.find_element_by_xpath('//*[@id="mainmenu"]/ul/li[1]/a/span')
