@@ -6,3 +6,5 @@ wait1()
 #单击“站点管理”菜单
 findXpath(xpath='//*[@id="app"]/div/div[1]/div[2]/div[1]/div/ul/div[3]/li/ul/div/a/li').click()
 wait1()
+findXpath(xpath='//*[@id="app"]/div/div[1]/div[2]/div[1]/div/ul/div[3]/li/ul/div/a/li').click()
+wait1()
